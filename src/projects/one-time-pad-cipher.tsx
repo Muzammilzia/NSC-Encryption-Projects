@@ -1,4 +1,4 @@
-import { Box, Button, Tab, Tabs, Typography } from "@mui/material";
+import { Box, Tab, Tabs, Typography } from "@mui/material";
 import { FC, useState } from "react";
 import { Encryption } from "../components/one-time-pad-cipher/encryption";
 import { Decryption } from "../components/one-time-pad-cipher/decryption";
