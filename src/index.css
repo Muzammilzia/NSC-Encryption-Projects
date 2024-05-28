@@ -1,0 +1,12 @@
+:root{
+  font-size: 16px;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.custom-text-field {
+  font-size: 20px !important;
+  /* Add any other styles you want */
+}
