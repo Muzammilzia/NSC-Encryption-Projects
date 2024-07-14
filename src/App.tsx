@@ -6,6 +6,8 @@ import {
   OneTimePadCipher,
   HillCipher,
   TranspositionCipher,
+  PlayFairCipher,
+  RailFenceCipher,
 } from "./projects";
 import { Box } from "@mui/material";
 
@@ -26,6 +28,12 @@ const App: FC = () => {
       </Box>
       <Box sx={{ height: "100vh" }}>
         <TranspositionCipher />
+      </Box>
+      <Box sx={{ height: "100vh" }}>
+        <PlayFairCipher />
+      </Box>
+      <Box sx={{ height: "100vh" }}>
+        <RailFenceCipher />
       </Box>
     </>
   );
