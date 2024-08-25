@@ -28,7 +28,7 @@ export const decryptRailFence = (cipherText: string, key: string) => {
   }
 
   const rail: string[][] = Array.from({ length: numRails }, () => []);
-  const railLength = Array(numRails).fill(0);
+  const railLength = Array(numRails).fill(0); 
 
   let railIndex = 0;
   let direction = 1;
@@ -50,7 +50,8 @@ export const decryptRailFence = (cipherText: string, key: string) => {
       rail[i].push(cipherText[index++]);
     }
   }
-
+  
+  
   let result = "";
   railIndex = 0;
   direction = 1;

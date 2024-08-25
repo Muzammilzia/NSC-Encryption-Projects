@@ -8,6 +8,8 @@ import {
   TranspositionCipher,
   PlayFairCipher,
   RailFenceCipher,
+  RSA,
+  DES,
 } from "./projects";
 import { Box } from "@mui/material";
 
@@ -34,6 +36,12 @@ const App: FC = () => {
       </Box>
       <Box sx={{ height: "100vh" }}>
         <RailFenceCipher />
+      </Box>
+      <Box sx={{ height: "100vh" }}>
+        <RSA />
+      </Box>
+      <Box sx={{ height: "100vh" }}>
+        <DES />
       </Box>
     </>
   );

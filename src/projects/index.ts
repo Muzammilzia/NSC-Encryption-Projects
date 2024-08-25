@@ -5,3 +5,5 @@ export * from './hill-cipher';
 export * from './transposition-cipher';
 export * from './playfair-cipher';
 export * from './rail-fence-cipher';
+export * from './rsa';
+export * from './des';
