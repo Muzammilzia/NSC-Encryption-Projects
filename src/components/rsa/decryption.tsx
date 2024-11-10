@@ -1,7 +1,7 @@
 import { Grid, TextField, Typography } from "@mui/material";
 import React, { useEffect, useState } from "react";
 import bigInt, { BigInteger } from "big-integer";
-import { decodeRSA, decryptRSA, generateRSAKey } from "../../utils/rsa";
+import { decodeRSA, decryptRSA } from "../../utils/rsa";
 
 interface DecryptionProps {
   privateKey?: {
@@ -13,17 +13,6 @@ interface DecryptionProps {
 export const Decryption: React.FC<DecryptionProps> = ({ privateKey }) => {
   const [inputText, setInputText] = useState("");
   const [decryptedText, setDecryptedText] = useState("");
-  // const [key, setKey] = useState<{
-  //   e: BigInteger;
-  //   n: BigInteger;
-  //   d: BigInteger;
-  // }>();
-
-  console.log(privateKey);
-
-  // useEffect(() => {
-  //   setKey(generateRSAKey(250))
-  // }, []);
 
   useEffect(() => {
     if(privateKey && privateKey.d && privateKey.e) {
